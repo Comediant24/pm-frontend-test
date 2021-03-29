@@ -1,0 +1,51 @@
+.input {
+  display: flex;
+  flex-flow: column-reverse;
+
+  &__label,
+  &__field {
+    transition: all 0.2s;
+    touch-action: manipulation;
+  }
+
+  &__field {
+    border: 0;
+    border-bottom: 2px solid #f4f4f4;
+    padding-bottom: 10px;
+    -webkit-appearance: none;
+
+    &:focus {
+      outline: 0;
+      border-bottom: 2px solid #83e80a;
+    }
+
+    &:placeholder-shown + label {
+      cursor: text;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      transform-origin: left bottom;
+      transform: translate(0, 1.825rem);
+    }
+
+    &:focus::-webkit-input-placeholder {
+      opacity: 1;
+    }
+
+    &:not(:placeholder-shown) + .input__label,
+    &:focus + .input__label {
+      transform: translate(0, 0);
+      font-size: 14px;
+      color: #969595;
+    }
+  }
+
+  &__label {
+    padding: 0 2px;
+  }
+
+  ::-webkit-input-placeholder {
+    opacity: 0;
+    transition: inherit;
+  }
+}
