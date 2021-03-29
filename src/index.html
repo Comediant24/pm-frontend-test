@@ -1,120 +1,273 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body class="root">
-  <div class="page">
-    <header class="header">
-      <img alt="лого анкеты" class="header__logo" src="<%=require('./images/logo.png')%>">
-      <h1 class="header__title">Я — разработчик</h1>
-    </header>
-    <main class="content">
-
-      <section class="section-resume section-resume_about">
-        <div class="section-resume__description">
-          <h2 class="section-resume__title">Расскажите о себе</h2>
-          <p class="section-resume__description">Поля не являются обязательными, но помимо вашего имени, нам бы хотелось
-            знать из какого вы города, сколько вам лет и как с вами связаться</p>
-        </div>
-        <form class="form section-resume__form">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body class="root">
+    <div class="page">
+      <header class="header">
+        <img
+          alt="лого анкеты"
+          class="header__logo"
+          src="<%=require('./images/logo.png')%>"
+        />
+        <h1 class="header__title">Я — разработчик</h1>
+      </header>
+      <main class="content">
+        <section class="section-resume section-resume_about">
+          <div class="section-resume__description">
+            <h2 class="section-resume__title">Расскажите о себе</h2>
+            <p class="section-resume__description">
+              Поля не являются обязательными, но помимо вашего имени, нам бы
+              хотелось знать из какого вы города, сколько вам лет и как с вами
+              связаться
+            </p>
+          </div>
+          <form class="form section-resume__form">
             <div class="form__item-wrapper input">
-              <input class="input__field" type="text" name="name" id="name" aria-label="Ваше имя" placeholder="Ваше имя">
+              <input
+                class="input__field"
+                type="text"
+                name="name"
+                id="name"
+                aria-label="Ваше имя"
+                placeholder="Ваше имя"
+              />
               <label class="input__label" for="name">Имя</label>
             </div>
             <div class="form__item-wrapper input">
-              <input class="input__field" type="text" name="date" id="date" aria-label="Ваш год рождения" placeholder="Ваш год рождения">
+              <input
+                class="input__field"
+                type="text"
+                name="date"
+                id="date"
+                aria-label="Ваш год рождения"
+                placeholder="Ваш год рождения"
+              />
               <label class="input__label" for="date">Год рождения</label>
             </div>
             <div class="form__item-wrapper input">
-              <input class="input__field" type="text" name="city" id="city" aria-label="Ваше город" placeholder="Ваше город">
+              <input
+                class="input__field"
+                type="text"
+                name="city"
+                id="city"
+                aria-label="Ваше город"
+                placeholder="Ваше город"
+              />
               <label class="input__label" for="city">Город</label>
             </div>
             <div class="form__item-wrapper input">
-              <input class="input__field" type="text" name="telegram" id="telegram" aria-label="Ваш ник в telegram" placeholder="Ваш ник в telegram">
+              <input
+                class="input__field"
+                type="text"
+                name="telegram"
+                id="telegram"
+                aria-label="Ваш ник в telegram"
+                placeholder="Ваш ник в telegram"
+              />
               <label class="input__label" for="telegram">Телеграм</label>
             </div>
             <div class="form__item-wrapper input">
-              <input class="input__field" type="email" name="email" id="email" aria-label="Ваш email" placeholder="Ваш email">
+              <input
+                class="input__field"
+                type="email"
+                name="email"
+                id="email"
+                aria-label="Ваш email"
+                placeholder="Ваш email"
+              />
               <label class="input__label" for="email">Почта</label>
             </div>
-        </form>
-      </section>
+          </form>
+        </section>
 
-      <section class="section-resume section-resume_skills">
-        <div class="section-resume__description">
-          <h2 class="section-resume__title">Отметьте ваши навыки</h2>
-          <p class="section-resume__description">Отметьте чекбоксами пункты, которые соответствуют вашим скиллам.
-            Кстати, отсутствие опыта не означает, что у вас меньше шансов стать одним из наших товарищей.
-            Это означает, что вы будете получать те задачи, с которыми гарантировано будете справляться.</p>
-        </div>
-        <form class="form form_checkbox section-resume__form">
-
+        <section class="section-resume section-resume_skills">
+          <div class="section-resume__description">
+            <h2 class="section-resume__title">Отметьте ваши навыки</h2>
+            <p class="section-resume__description">
+              Отметьте чекбоксами пункты, которые соответствуют вашим скиллам.
+              Кстати, отсутствие опыта не означает, что у вас меньше шансов
+              стать одним из наших товарищей. Это означает, что вы будете
+              получать те задачи, с которыми гарантировано будете справляться.
+            </p>
+          </div>
+          <form class="form form_checkbox section-resume__form">
             <fieldset class="form__fieldset checkbox">
               <ul class="form__checkbox-list checkbox__list">
                 <li class="checkbox__item">
-                  <input class="checkbox__box" type="checkbox" name="bem" id="bem" value="bem" checked="checked">
+                  <input
+                    class="checkbox__box"
+                    type="checkbox"
+                    name="bem"
+                    id="bem"
+                    value="bem"
+                    checked="checked"
+                  />
                   <label class="checkbox__label" for="bem">БЭМ/OOCSS</label>
                 </li>
                 <li class="checkbox">
-                  <input class="checkbox__box" type="checkbox" name="pug" id="pug" value="pug">
+                  <input
+                    class="checkbox__box"
+                    type="checkbox"
+                    name="pug"
+                    id="pug"
+                    value="pug"
+                  />
                   <label class="checkbox__label" for="pug">Pug (Jade)</label>
                 </li>
                 <li class="checkbox">
-                  <input class="checkbox__box" type="checkbox" name="sass" id="sass" value="sass" checked="checked">
-                  <label class="checkbox__label" for="sass">Stylus/LESS/SASS</label>
+                  <input
+                    class="checkbox__box"
+                    type="checkbox"
+                    name="sass"
+                    id="sass"
+                    value="sass"
+                    checked="checked"
+                  />
+                  <label class="checkbox__label" for="sass"
+                    >Stylus/LESS/SASS</label
+                  >
                 </li>
                 <li class="checkbox">
-                  <input class="checkbox__box" type="checkbox" name="svg" id="svg" value="svg" checked="checked">
+                  <input
+                    class="checkbox__box"
+                    type="checkbox"
+                    name="svg"
+                    id="svg"
+                    value="svg"
+                    checked="checked"
+                  />
                   <label class="checkbox__label" for="svg">Работаю с SVG</label>
                 </li>
                 <li class="checkbox">
-                  <input class="checkbox__box" type="checkbox" name="semantic" id="semantic" value="semantic" checked="checked">
-                  <label class="checkbox__label" for="semantic">Верстаю семантично</label>
+                  <input
+                    class="checkbox__box"
+                    type="checkbox"
+                    name="semantic"
+                    id="semantic"
+                    value="semantic"
+                    checked="checked"
+                  />
+                  <label class="checkbox__label" for="semantic"
+                    >Верстаю семантично</label
+                  >
                 </li>
                 <li class="checkbox">
-                  <input class="checkbox__box" type="checkbox" name="accessibility" id="accessibility" value="accessibility" checked="checked">
-                  <label class="checkbox__label" for="accessibility">Accessibility (A11Y)</label>
+                  <input
+                    class="checkbox__box"
+                    type="checkbox"
+                    name="accessibility"
+                    id="accessibility"
+                    value="accessibility"
+                    checked="checked"
+                  />
+                  <label class="checkbox__label" for="accessibility"
+                    >Accessibility (A11Y)</label
+                  >
                 </li>
                 <li class="checkbox">
-                  <input class="checkbox__box" type="checkbox" name="es6es7" id="es6es7" value="es6es7" checked="checked">
-                  <label class="checkbox__label" for="es6es7">ES2015/ES2016</label>
+                  <input
+                    class="checkbox__box"
+                    type="checkbox"
+                    name="es6es7"
+                    id="es6es7"
+                    value="es6es7"
+                    checked="checked"
+                  />
+                  <label class="checkbox__label" for="es6es7"
+                    >ES2015/ES2016</label
+                  >
                 </li>
-              </ul>              
+              </ul>
             </fieldset>
 
             <fieldset class="form__fieldset checkbox">
               <ul class="form__checkbox-list checkbox__list">
                 <li class="checkbox">
-                  <input class="checkbox__box" type="checkbox" name="gulp" id="gulp" value="gulp">
+                  <input
+                    class="checkbox__box"
+                    type="checkbox"
+                    name="gulp"
+                    id="gulp"
+                    value="gulp"
+                  />
                   <label class="checkbox__label" for="gulp">Gulp/GRUNT</label>
                 </li>
                 <li class="checkbox">
-                  <input class="checkbox__box" type="checkbox" name="webpack" id="webpack" value="webpack" checked="checked">
+                  <input
+                    class="checkbox__box"
+                    type="checkbox"
+                    name="webpack"
+                    id="webpack"
+                    value="webpack"
+                    checked="checked"
+                  />
                   <label class="checkbox__label" for="webpack">Webpack</label>
                 </li>
                 <li class="checkbox">
-                  <input class="checkbox__box" type="checkbox" name="webgl" id="webgl" value="webgl" checked="checked">
-                  <label class="checkbox__label" for="webgl">Дружу с WebGL</label>
+                  <input
+                    class="checkbox__box"
+                    type="checkbox"
+                    name="webgl"
+                    id="webgl"
+                    value="webgl"
+                    checked="checked"
+                  />
+                  <label class="checkbox__label" for="webgl"
+                    >Дружу с WebGL</label
+                  >
                 </li>
                 <li class="checkbox">
-                  <input class="checkbox__box" type="checkbox" name="jquery" id="jquery" value="jquery">
+                  <input
+                    class="checkbox__box"
+                    type="checkbox"
+                    name="jquery"
+                    id="jquery"
+                    value="jquery"
+                  />
                   <label class="checkbox__label" for="jquery">jQuery</label>
                 </li>
                 <li class="checkbox">
-                  <input class="checkbox__box" type="checkbox" name="angular" id="angular" value="angular">
-                  <label class="checkbox__label" for="angular">Знаю/изучаю Angular</label>
+                  <input
+                    class="checkbox__box"
+                    type="checkbox"
+                    name="angular"
+                    id="angular"
+                    value="angular"
+                  />
+                  <label class="checkbox__label" for="angular"
+                    >Знаю/изучаю Angular</label
+                  >
                 </li>
                 <li class="checkbox">
-                  <input class="checkbox__box" type="checkbox" name="react" id="react" value="react" checked="checked">
-                  <label class="checkbox__label" for="react">Знаю/изучаю React</label>
+                  <input
+                    class="checkbox__box"
+                    type="checkbox"
+                    name="react"
+                    id="react"
+                    value="react"
+                    checked="checked"
+                  />
+                  <label class="checkbox__label" for="react"
+                    >Знаю/изучаю React</label
+                  >
                 </li>
                 <li class="checkbox">
-                  <input class="checkbox__box" type="checkbox" name="node" id="node" value="node" checked="checked">
-                  <label class="checkbox__label" for="node">Знаю/изучаю Node.js</label>
+                  <input
+                    class="checkbox__box"
+                    type="checkbox"
+                    name="node"
+                    id="node"
+                    value="node"
+                    checked="checked"
+                  />
+                  <label class="checkbox__label" for="node"
+                    >Знаю/изучаю Node.js</label
+                  >
                 </li>
               </ul>
             </fieldset>
@@ -122,115 +275,208 @@
             <fieldset class="form__fieldset checkbox">
               <ul class="form__checkbox-list checkbox__list">
                 <li class="checkbox">
-                  <input class="checkbox__box" type="checkbox" name="git" id="git" value="git">
+                  <input
+                    class="checkbox__box"
+                    type="checkbox"
+                    name="git"
+                    id="git"
+                    value="git"
+                  />
                   <label class="checkbox__label" for="git">Использую Git</label>
                 </li>
                 <li class="checkbox">
-                  <input class="checkbox__box" type="checkbox" name="eyes" id="eyes" value="eyes" checked="checked">
-                  <label class="checkbox__label" for="eyes">С глазомером всё ок</label>
+                  <input
+                    class="checkbox__box"
+                    type="checkbox"
+                    name="eyes"
+                    id="eyes"
+                    value="eyes"
+                    checked="checked"
+                  />
+                  <label class="checkbox__label" for="eyes"
+                    >С глазомером всё ок</label
+                  >
                 </li>
                 <li class="checkbox">
-                  <input class="checkbox__box" type="checkbox" name="lazy" id="lazy" value="lazy" checked="checked">
-                  <label class="checkbox__label" for="lazy">Я ленивый(-ая)</label>
+                  <input
+                    class="checkbox__box"
+                    type="checkbox"
+                    name="lazy"
+                    id="lazy"
+                    value="lazy"
+                    checked="checked"
+                  />
+                  <label class="checkbox__label" for="lazy"
+                    >Я ленивый(-ая)</label
+                  >
                 </li>
                 <li class="checkbox">
-                  <input class="checkbox__box" type="checkbox" name="english" id="english" value="english">
-                  <label class="checkbox__label" for="english">У меня хороший английский</label>
+                  <input
+                    class="checkbox__box"
+                    type="checkbox"
+                    name="english"
+                    id="english"
+                    value="english"
+                  />
+                  <label class="checkbox__label" for="english"
+                    >У меня хороший английский</label
+                  >
                 </li>
               </ul>
             </fieldset>
+          </form>
+        </section>
 
-        </form>
-      </section>
+        <section class="section-resume section-resume_js">
+          <div class="section-resume__description">
+            <h2 class="section-resume__title">Уровень владения Javascript</h2>
+          </div>
+          <form class="form form_slider slider">
+            <ul class="slider__list">
+              <li class="slider__item">
+                <input
+                  class="slider__input"
+                  type="radio"
+                  id="noob"
+                  name="skill"
+                />
+                <span class="slider__span"></span>
+              </li>
 
-      <section class="section-resume section-resume__js">
-        <div class="section-resume__description">
-          <h2 class="section-resume__title">Уровень владения Javascript</h2>
-        </div>
-        <form class="form section-resume__form">
-          <ul class="form__slider">
-            <li class="form__slider-item">
-              <label class="form__slider-label" for="noob">Не владею</label>
-              <input class="form__slider-radio" type="radio" id="noob">
-            </li>
-            <li class="form__slider-item">
-              <label class="form__slider-label" for="use">Использую готовые решения</label>
-              <input class="form__slider-radio" type="radio" id="use">
-            </li>
-            <li class="form__slider-item">
-              <label class="form__slider-label" for="edit">Использую готовые решенияи умею их переделывать</label>
-              <input class="form__slider-radio" type="radio" id="edit">
-            </li>
-            <li class="form__slider-item">
-              <label class="form__slider-label" for="master">Пишу сложный JS с нуля</label>
-              <input class="form__slider-radio" type="radio" id="master">
-            </li>
-          </ul>
-        </form>
-      </section>
+              <!-- <input name="test3" type="radio" /><span
+                class="slider__span"
+              ></span> -->
 
-      <section class="section-resume section-resume__tell">
-        <div class="section-resume__description">
-          <h2 class="section-resume__title">Расскажите о себе словами</h2>
-          <p class="section-resume__description">Напишите пару предложений, чем вас привлекла наша вакансия и чего
-            вы ожидаете от работы в Proektmarketing.
-            Кстати, будет здорово, если при нехватке места для текста строки будут добавляться автоматически.
-          </p>
-        </div>
-        <form class="form section-resume__form">
-          <div class="form__textarea-wrapper"><span class="form__textarea" role="textbox" contenteditable></span></div>
-        </form>
-      </section>
+              <li class="slider__devide"></li>
+              <li class="slider__item">
+                <input
+                  class="slider__input"
+                  type="radio"
+                  id="use"
+                  name="skill"
+                />
+                <span class="slider__span"></span>
+              </li>
+              <li class="slider__devide"></li>
+              <li class="slider__item">
+                <input
+                  class="slider__input"
+                  type="radio"
+                  id="edit"
+                  name="skill"
+                  checked
+                />
+                <span class="slider__span"></span>
+              </li>
+              <li class="slider__devide"></li>
+              <li class="slider__item">
+                <input
+                  class="slider__input"
+                  type="radio"
+                  id="master"
+                  name="skill"
+                />
+                <span class="slider__span"></span>
+              </li>
+            </ul>
 
-      <section class="section-resume section-resume__future">
-        <div class="section-resume__description">
-          <h2 class="section-resume__title">Какие у вас планы на будущее</h2>
-          <p class="section-resume__description">Этот ответ ни на что не повлияет. Не беда, если в будущем ваши планы поменяются.
-          </p>
-        </div>
-        <form class="form section-resume__form">
-          <div class="form__radio-wrapper">
-            <label class="form__radio" for="layout">
-              <span class="form__radio__input">
-                <input type="radio" name="layout" id="layout">
-                <span class="form__radio-control"></span>
-              </span>
-              <span class="form__radio-label">Верстать</span>
-            </label>
+            <ul class="slider__list slider__list_label">
+              <li class="slider__item">
+                <label class="slider__label" for="noob">Не владею</label>
+              </li>
+              <li class="slider__item slider__item_center">
+                <label class="slider__label" for="use"
+                  >Использую готовые решения</label
+                >
+              </li>
+              <li class="slider__item slider__item_center">
+                <label class="slider__label" for="edit"
+                  >Использую готовые решенияи умею их переделывать</label
+                >
+              </li>
+              <li class="slider__item">
+                <label class="slider__label" for="master"
+                  >Пишу сложный JS с нуля</label
+                >
+              </li>
+            </ul>
+          </form>
+        </section>
+
+        <section class="section-resume section-resume__tell">
+          <div class="section-resume__description">
+            <h2 class="section-resume__title">Расскажите о себе словами</h2>
+            <p class="section-resume__description">
+              Напишите пару предложений, чем вас привлекла наша вакансия и чего
+              вы ожидаете от работы в Proektmarketing. Кстати, будет здорово,
+              если при нехватке места для текста строки будут добавляться
+              автоматически.
+            </p>
           </div>
-          <div class="form__radio-wrapper">
-            <label class="form__radio" for="manger">
-              <span class="form__radio__input">
-                <input type="radio" name="manger" id="manger">
-                <span class="form__radio-control"></span>
-              </span>
-              <span class="form__radio-label">Менеджерство</span>
-            </label>
+          <form class="form section-resume__form">
+            <div class="form__textarea-wrapper">
+              <span
+                class="form__textarea"
+                role="textbox"
+                contenteditable
+              ></span>
+            </div>
+          </form>
+        </section>
+
+        <section class="section-resume section-resume__future">
+          <div class="section-resume__description">
+            <h2 class="section-resume__title">Какие у вас планы на будущее</h2>
+            <p class="section-resume__description">
+              Этот ответ ни на что не повлияет. Не беда, если в будущем ваши
+              планы поменяются.
+            </p>
           </div>
-          <div class="form__radio-wrapper">
-            <label class="form__radio" for="jsmaster">
-              <span class="form__radio__input">
-                <input type="radio" name="jsmaster" id="jsmaster">
-                <span class="form__radio-control"></span>
-              </span>
-              <span class="form__radio-label">Прокачиваться в JS</span>
-            </label>
-          </div>
-          <div class="form__radio-wrapper">
-            <label class="form__radio" for="funny">
-              <span class="form__radio__input">
-                <input type="radio" name="funny" id="funny">
-                <span class="form__radio-control"></span>
-              </span>
-              <span class="form__radio-label">Другое (уйти в калиграфию, быть как Покрас Лампас)</span>
-            </label>
-          </div>
-        </form>
-      </section>
-      <section clas="section-resume">
-        <button type="submit" class="button form__button">Отправить</button>
-      </section>
-    </main>
-  </div>
-</body>
+          <form class="form section-resume__form">
+            <div class="form__radio-wrapper">
+              <label class="form__radio" for="layout">
+                <span class="form__radio__input">
+                  <input type="radio" name="layout" id="layout" />
+                  <span class="form__radio-control"></span>
+                </span>
+                <span class="form__radio-label">Верстать</span>
+              </label>
+            </div>
+            <div class="form__radio-wrapper">
+              <label class="form__radio" for="manger">
+                <span class="form__radio__input">
+                  <input type="radio" name="manger" id="manger" />
+                  <span class="form__radio-control"></span>
+                </span>
+                <span class="form__radio-label">Менеджерство</span>
+              </label>
+            </div>
+            <div class="form__radio-wrapper">
+              <label class="form__radio" for="jsmaster">
+                <span class="form__radio__input">
+                  <input type="radio" name="jsmaster" id="jsmaster" />
+                  <span class="form__radio-control"></span>
+                </span>
+                <span class="form__radio-label">Прокачиваться в JS</span>
+              </label>
+            </div>
+            <div class="form__radio-wrapper">
+              <label class="form__radio" for="funny">
+                <span class="form__radio__input">
+                  <input type="radio" name="funny" id="funny" />
+                  <span class="form__radio-control"></span>
+                </span>
+                <span class="form__radio-label"
+                  >Другое (уйти в калиграфию, быть как Покрас Лампас)</span
+                >
+              </label>
+            </div>
+          </form>
+        </section>
+        <section clas="section-resume">
+          <button type="submit" class="button form__button">Отправить</button>
+        </section>
+      </main>
+    </div>
+  </body>
 </html>
