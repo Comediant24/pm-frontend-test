@@ -1,0 +1,17 @@
+.section-resume {
+  display: grid;
+  grid-template-columns: auto 637px;
+  gap: 50px;
+
+  @media (max-width: $screen-md) {
+    grid-template-columns: 1fr;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  &__description {
+    max-width: 490px;
+  }
+}
