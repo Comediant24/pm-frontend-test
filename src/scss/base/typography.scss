@@ -1,0 +1,49 @@
+$black: #000000;
+
+$font-family-base: Roboto, sans-serif !default;
+
+$font-size-base: 20px !default;
+$font-size-h1: floor(($font-size-base * 3.5));
+$font-size-h3: floor(($font-size-base * 1.5));
+
+$font-weight-base: 300;
+
+$line-height-base: 150%;
+
+$font-smoothing: antialiased;
+$text-rendering: optimizeLegibility;
+
+$text-color: #000000 !default;
+
+body {
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  font-weight: $font-weight-base;
+  line-height: $line-height-base;
+  -webkit-font-smoothing: $font-smoothing;
+  text-rendering: $text-rendering;
+  color: $text-color;
+}
+
+h1 {
+  font-size: $font-size-h1;
+}
+
+h3 {
+  font-size: $font-size-h3;
+}
+
+h1,
+h3 {
+  margin: 0;
+  font-weight: $font-weight-base;
+}
+
+p {
+  margin: 0;
+}
+
+input {
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+}
