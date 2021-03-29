@@ -3,4 +3,17 @@
   flex-direction: column;
   gap: 15px;
   padding-top: 26px;
+
+  &_checkbox {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 60px;
+    gap: 36px 10px;
+  }
+
+  &__fieldset {
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
 }

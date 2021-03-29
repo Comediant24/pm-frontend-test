@@ -51,88 +51,93 @@
             Кстати, отсутствие опыта не означает, что у вас меньше шансов стать одним из наших товарищей.
             Это означает, что вы будете получать те задачи, с которыми гарантировано будете справляться.</p>
         </div>
-        <form class="form section-resume__form">
+        <form class="form form_checkbox section-resume__form">
 
-            <fieldset class="form__container">
-              <label class="form__label-container" for="bem">БЭМ/OOCSS
-                <input type="checkbox" name="bem" id="bem" checked="checked">
-                <span class="form__checkbox-checkmark"></span>
-              </label>
-              <label class="form__label-container" for="pug">Pug (Jade)
-                <input type="checkbox" name="pug" id="pug">
-                <span class="form__checkbox-checkmark"></span>
-              </label>
-              <label class="form__label-container" for="sass">Stylus/LESS/SASS
-                <input type="checkbox" name="sass" id="sass" checked="checked">
-                <span class="form__checkbox-checkmark"></span>
-              </label>
-              <label class="form__label-container" for="svg">Работаю с SVG
-                <input type="checkbox" name="svg" id="svg" checked="checked">
-                <span class="form__checkbox-checkmark"></span>
-              </label>
-              <label class="form__label-container" for="semantic">Верстаю семантично
-                <input type="checkbox" name="semantic" id="semantic" checked="checked">
-                <span class="form__checkbox-checkmark"></span>
-              </label>
-              <label class="form__label-container" for="accessibility">Accessibility (A11Y)
-                <input type="checkbox" name="accessibility" id="accessibility" checked="checked">
-                <span class="form__checkbox-checkmark"></span>
-              </label>
-              <label class="form__label-container" for="es6es7">ES2015/ES2016
-                <input type="checkbox" name="es6es7" id="es6es7" checked="checked">
-                <span class="form__checkbox-checkmark"></span>
-              </label>
+            <fieldset class="form__fieldset checkbox">
+              <ul class="form__checkbox-list checkbox__list">
+                <li class="checkbox__item">
+                  <input class="checkbox__box" type="checkbox" name="bem" id="bem" value="bem" checked="checked">
+                  <label class="checkbox__label" for="bem">БЭМ/OOCSS</label>
+                </li>
+                <li class="checkbox">
+                  <input class="checkbox__box" type="checkbox" name="pug" id="pug" value="pug">
+                  <label class="checkbox__label" for="pug">Pug (Jade)</label>
+                </li>
+                <li class="checkbox">
+                  <input class="checkbox__box" type="checkbox" name="sass" id="sass" value="sass" checked="checked">
+                  <label class="checkbox__label" for="sass">Stylus/LESS/SASS</label>
+                </li>
+                <li class="checkbox">
+                  <input class="checkbox__box" type="checkbox" name="svg" id="svg" value="svg" checked="checked">
+                  <label class="checkbox__label" for="svg">Работаю с SVG</label>
+                </li>
+                <li class="checkbox">
+                  <input class="checkbox__box" type="checkbox" name="semantic" id="semantic" value="semantic" checked="checked">
+                  <label class="checkbox__label" for="semantic">Верстаю семантично</label>
+                </li>
+                <li class="checkbox">
+                  <input class="checkbox__box" type="checkbox" name="accessibility" id="accessibility" value="accessibility" checked="checked">
+                  <label class="checkbox__label" for="accessibility">Accessibility (A11Y)</label>
+                </li>
+                <li class="checkbox">
+                  <input class="checkbox__box" type="checkbox" name="es6es7" id="es6es7" value="es6es7" checked="checked">
+                  <label class="checkbox__label" for="es6es7">ES2015/ES2016</label>
+                </li>
+              </ul>              
             </fieldset>
 
-            
-            <fieldset class="form__container">
-              <label class="form__label-container" for="gulp">Gulp/GRUNT
-                <input type="checkbox" name="gulp" id="gulp">
-                <span class="form__checkbox-checkmark"></span>
-              </label>
-              <label class="form__label-container" for="webpack">Webpack
-                <input type="checkbox" name="webpack" id="webpack" checked="checked">
-                <span class="form__checkbox-checkmark"></span>
-              </label>
-              <label class="form__label-container" for="webgl">Дружу с WebGL
-                <input type="checkbox" name="webgl" id="webgl" checked="checked">
-                <span class="form__checkbox-checkmark"></span>
-              </label>
-              <label class="form__label-container" for="jquery">jQuery
-                <input type="checkbox" name="jquery" id="jquery">
-                <span class="form__checkbox-checkmark"></span>
-              </label>
-              <label class="form__label-container" for="angular">Знаю/изучаю Angular
-                <input type="checkbox" name="angular" id="angular">
-                <span class="form__checkbox-checkmark"></span>
-              </label>
-              <label class="form__label-container" for="react">Знаю/изучаю React
-                <input type="checkbox" name="react" id="react" checked="checked">
-                <span class="form__checkbox-checkmark"></span>
-              </label>
-              <label class="form__label-container" for="node">Знаю/изучаю Node.js
-                <input type="checkbox" name="node" id="node" checked="checked">
-                <span class="form__checkbox-checkmark"></span>
-              </label>
+            <fieldset class="form__fieldset checkbox">
+              <ul class="form__checkbox-list checkbox__list">
+                <li class="checkbox">
+                  <input class="checkbox__box" type="checkbox" name="gulp" id="gulp" value="gulp">
+                  <label class="checkbox__label" for="gulp">Gulp/GRUNT</label>
+                </li>
+                <li class="checkbox">
+                  <input class="checkbox__box" type="checkbox" name="webpack" id="webpack" value="webpack" checked="checked">
+                  <label class="checkbox__label" for="webpack">Webpack</label>
+                </li>
+                <li class="checkbox">
+                  <input class="checkbox__box" type="checkbox" name="webgl" id="webgl" value="webgl" checked="checked">
+                  <label class="checkbox__label" for="webgl">Дружу с WebGL</label>
+                </li>
+                <li class="checkbox">
+                  <input class="checkbox__box" type="checkbox" name="jquery" id="jquery" value="jquery">
+                  <label class="checkbox__label" for="jquery">jQuery</label>
+                </li>
+                <li class="checkbox">
+                  <input class="checkbox__box" type="checkbox" name="angular" id="angular" value="angular">
+                  <label class="checkbox__label" for="angular">Знаю/изучаю Angular</label>
+                </li>
+                <li class="checkbox">
+                  <input class="checkbox__box" type="checkbox" name="react" id="react" value="react" checked="checked">
+                  <label class="checkbox__label" for="react">Знаю/изучаю React</label>
+                </li>
+                <li class="checkbox">
+                  <input class="checkbox__box" type="checkbox" name="node" id="node" value="node" checked="checked">
+                  <label class="checkbox__label" for="node">Знаю/изучаю Node.js</label>
+                </li>
+              </ul>
             </fieldset>
 
-            <fieldset class="form__container">
-              <label class="form__label-container" for="git">Использую Git
-                <input type="checkbox" name="git" id="git">
-                <span class="form__checkbox-checkmark"></span>
-              </label>
-              <label class="form__label-container" for="eyes">С глазомером всё ок
-                <input type="checkbox" name="eyes" id="eyes" checked="checked">
-                <span class="form__checkbox-checkmark"></span>
-              </label>
-              <label class="form__label-container" for="lazy">Я ленивый(-ая)
-                <input type="checkbox" name="lazy" id="lazy" checked="checked">
-                <span class="form__checkbox-checkmark"></span>
-              </label>
-              <label class="form__label-container" for="english">У меня хороший английский
-                <input type="checkbox" name="english" id="english">
-                <span class="form__checkbox-checkmark"></span>
-              </label>
+            <fieldset class="form__fieldset checkbox">
+              <ul class="form__checkbox-list checkbox__list">
+                <li class="checkbox">
+                  <input class="checkbox__box" type="checkbox" name="git" id="git" value="git">
+                  <label class="checkbox__label" for="git">Использую Git</label>
+                </li>
+                <li class="checkbox">
+                  <input class="checkbox__box" type="checkbox" name="eyes" id="eyes" value="eyes" checked="checked">
+                  <label class="checkbox__label" for="eyes">С глазомером всё ок</label>
+                </li>
+                <li class="checkbox">
+                  <input class="checkbox__box" type="checkbox" name="lazy" id="lazy" value="lazy" checked="checked">
+                  <label class="checkbox__label" for="lazy">Я ленивый(-ая)</label>
+                </li>
+                <li class="checkbox">
+                  <input class="checkbox__box" type="checkbox" name="english" id="english" value="english">
+                  <label class="checkbox__label" for="english">У меня хороший английский</label>
+                </li>
+              </ul>
             </fieldset>
 
         </form>
