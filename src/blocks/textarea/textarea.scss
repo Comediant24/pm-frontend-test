@@ -7,7 +7,6 @@
     overflow: hidden;
     resize: both;
     min-height: 373px;
-    line-height: 20px;
     box-sizing: border-box;
 
     &[contenteditable]:empty::before {
