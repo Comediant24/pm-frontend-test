@@ -2,6 +2,10 @@
   display: flex;
   flex-flow: column-reverse;
 
+  &_hidden {
+    display: none;
+  }
+
   &__label,
   &__field {
     transition: all 0.2s;

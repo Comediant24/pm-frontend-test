@@ -19,7 +19,9 @@
       <main class="content">
         <section class="section-resume section-resume_about">
           <div class="section-resume__description">
-            <h2 class="section-resume__title">Расскажите о себе</h2>
+            <h2 class="section-resume__title section-resume__title_about">
+              Расскажите о себе
+            </h2>
             <p class="section-resume__description">
               Поля не являются обязательными, но помимо вашего имени, нам бы
               хотелось знать из какого вы города, сколько вам лет и как с вами
@@ -27,6 +29,26 @@
             </p>
           </div>
           <form class="form form_bio section-resume__form">
+            <div class="form__item-wrapper input input_hobby hidden">
+              <input
+                class="input__field"
+                type="text"
+                name="hobby"
+                id="hobby"
+                aria-label="Ваш hobby"
+                placeholder="Ваш hobby"
+              />
+              <label class="input__label" for="hobby">hobby</label>
+            </div>
+
+            <div class="form__item-wrapper photo hidden">
+              <img
+                class="form__image photo__img"
+                alt="фото кандидата"
+                src="<%=require('./images/603534967.png')%>"
+              />
+            </div>
+
             <div class="form__item-wrapper input">
               <input
                 class="input__field"

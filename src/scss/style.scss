@@ -5,6 +5,7 @@
 @import './base/typography.scss';
 @import '../blocks/page/page.scss';
 @import '../blocks/content/content.scss';
+@import '../blocks/button/button.scss';
 @import '../blocks/header/header.scss';
 @import '../blocks/section-resume/section-resume.scss';
 @import '../blocks/form/form.scss';
@@ -13,7 +14,8 @@
 @import '../blocks/slider/slider.scss';
 @import '../blocks/textarea/textarea.scss';
 @import '../blocks/radio/radio.scss';
-@import '../blocks/button/button.scss';
+@import '../blocks/photo/photo.scss';
+@import '../blocks/hidden/hidden.scss';
 
 body {
   margin: 0;
