@@ -22,4 +22,14 @@
     padding: 0;
     border: 0;
   }
+
+  &__button {
+    width: 150px;
+    height: 46px;
+    border-radius: 23px;
+    grid-column: 2/3;
+    background-color: #000000;
+    color: #83e80a;
+    font-size: 20px;
+  }
 }
