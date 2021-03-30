@@ -1,4 +1,4 @@
-$black: #000000;
+$black: $color-primary;
 
 $font-family-base: Roboto, sans-serif !default;
 
@@ -13,7 +13,7 @@ $line-height-base: 150%;
 $font-smoothing: antialiased;
 $text-rendering: optimizeLegibility;
 
-$text-color: #000000 !default;
+$text-color: $color-primary !default;
 
 body {
   font-family: $font-family-base;
