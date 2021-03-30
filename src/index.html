@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Анкета</title>
   </head>
   <body class="root">
     <div class="page">
@@ -26,7 +26,7 @@
               связаться
             </p>
           </div>
-          <form class="form section-resume__form">
+          <form class="form form_bio section-resume__form">
             <div class="form__item-wrapper input">
               <input
                 class="input__field"
@@ -281,6 +281,7 @@
                     name="git"
                     id="git"
                     value="git"
+                    checked="checked"
                   />
                   <label class="checkbox__label" for="git">Использую Git</label>
                 </li>
@@ -304,7 +305,6 @@
                     name="lazy"
                     id="lazy"
                     value="lazy"
-                    checked="checked"
                   />
                   <label class="checkbox__label" for="lazy"
                     >Я ленивый(-ая)</label
@@ -317,6 +317,7 @@
                     name="english"
                     id="english"
                     value="english"
+                    checked="checked"
                   />
                   <label class="checkbox__label" for="english"
                     >У меня хороший английский</label
@@ -442,20 +443,6 @@
               </label>
             </div>
             <div class="form__radio-wrapper">
-              <label class="radio radio-before" for="manger">
-                <span class="radio__check">
-                  <input
-                    class="radio__input"
-                    type="radio"
-                    name="future"
-                    id="manger"
-                  />
-                  <span class="radio__control"></span>
-                </span>
-                <span class="radio__label">Менеджерство</span>
-              </label>
-            </div>
-            <div class="form__radio-wrapper">
               <label class="radio radio-before" for="jsmaster">
                 <span class="radio__check">
                   <input
@@ -468,6 +455,20 @@
                   <span class="radio__control"></span>
                 </span>
                 <span class="radio__label">Прокачиваться в JS</span>
+              </label>
+            </div>
+            <div class="form__radio-wrapper">
+              <label class="radio radio-before" for="manger">
+                <span class="radio__check">
+                  <input
+                    class="radio__input"
+                    type="radio"
+                    name="future"
+                    id="manger"
+                  />
+                  <span class="radio__control"></span>
+                </span>
+                <span class="radio__label">Менеджерство</span>
               </label>
             </div>
             <div class="form__radio-wrapper">

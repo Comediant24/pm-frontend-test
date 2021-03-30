@@ -3,8 +3,9 @@
   grid-template-columns: auto 637px;
   gap: 50px;
 
-  @media (max-width: $screen-md) {
+  @media (max-width: $screen-lg) {
     grid-template-columns: 1fr;
+    gap: 25px;
   }
 
   &_js {

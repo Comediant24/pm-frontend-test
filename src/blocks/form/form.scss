@@ -2,19 +2,42 @@
   display: flex;
   flex-direction: column;
   gap: 15px;
-  padding-top: 26px;
+  padding-top: 60px;
+
+  @media (max-width: $screen-lg) {
+    padding-top: 10px;
+  }
+
+  &_bio {
+    padding-top: 26px;
+  }
 
   &_checkbox {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding-top: 60px;
     gap: 36px 10px;
+
+    @media (max-width: $screen-lg) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media (max-width: $screen-md) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  &_slider {
+    padding-top: 10px;
   }
 
   &_radio {
     display: grid;
     grid-template-columns: max-content minmax(auto, 260px);
     gap: 28px 74px;
+  }
+
+  &_textarea {
+    padding-top: 60px;
   }
 
   &__fieldset {
@@ -31,5 +54,9 @@
     background-color: $color-primary;
     color: $color-secondary;
     font-size: 20px;
+
+    @media (max-width: $screen-lg) {
+      grid-column: auto;
+    }
   }
 }
