@@ -11,6 +11,12 @@
     gap: 36px 10px;
   }
 
+  &_radio {
+    display: grid;
+    grid-template-columns: max-content minmax(auto, 260px);
+    gap: 28px 74px;
+  }
+
   &__fieldset {
     margin: 0;
     padding: 0;

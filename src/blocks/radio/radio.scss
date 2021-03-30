@@ -1,0 +1,48 @@
+.radio {
+  display: grid;
+  grid-gap: 15px;
+
+  &__check {
+    display: flex;
+
+    input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+      margin: 0;
+
+      &:focus + .radio__control {
+        box-shadow: 0 0 0 0.05em black;
+      }
+    }
+  }
+
+  & &__control {
+    place-items: center;
+    display: grid;
+  }
+
+  &__input + &__control::before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    box-shadow: inset 15px 15px #83e80a;
+    border-radius: 50%;
+    transition: 180ms transform ease-in-out;
+    transform: scale(0);
+  }
+
+  &__input:checked + &__control::before {
+    transform: scale(1);
+  }
+
+  &__control {
+    display: block;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 2px solid #83e80a;
+    box-sizing: border-box;
+    transform: translateY(-0.05em);
+  }
+}
