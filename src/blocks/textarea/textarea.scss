@@ -1,0 +1,17 @@
+.textarea {
+  &__field {
+    border: 2px solid #f4f4f4;
+    padding: 31px 21px;
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    resize: both;
+    min-height: 373px;
+    line-height: 20px;
+
+    &[contenteditable]:empty::before {
+      content: 'Введите текст';
+      color: #969595;
+    }
+  }
+}
